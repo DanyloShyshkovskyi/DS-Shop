@@ -1,49 +1,31 @@
 import React from "react";
 import { Transition, animated } from "react-spring/renderprops";
-import {withGetScreen} from 'react-getscreen'
 // import css from './collapse.scss'
 
 
 const Collapse = ({ collapsed, children, ...props }) => {
-
-
-
-  let baseStyles = {
+  const baseStyles = {
     overflow: "hidden",
     height: 0,
-    opacity: 0
+    opacity: 0,
+    marginLeft: "1%",
+    height: props.height,
   };
-  let openStyles = {
-      
+  const openStyles = {
+    overflow: "hidden",
     height: props.height,
     opacity: 1
   };
-  let collapsedStyles = {
-    height: 0,
-    opacity: 0
-  };
-  let animationConfig = {
-    duration: 500
-  };
-
-  if (props.isMobile()){ baseStyles = {
+  const collapsedStyles = {
     overflow: "hidden",
-    height: 0,
-    opacity: 0
+    opacity: 0,
+    marginLeft: "-20%",
+    height:0,
+    
   };
-   openStyles = {
-      
-    height:500,
-    opacity: 1
-  };
-   collapsedStyles = {
-    height: 0,
-    opacity: 0
-  };
-   animationConfig = {
+  const animationConfig = {
     duration: 500
   };
-}
   return (
     <Transition
       items={collapsed}
@@ -64,4 +46,4 @@ const Collapse = ({ collapsed, children, ...props }) => {
   );
 };
 
-export default withGetScreen(Collapse);
+export default Collapse;

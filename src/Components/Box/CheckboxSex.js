@@ -14,6 +14,7 @@ import {withGetScreen} from 'react-getscreen'
       woman: true,
       children: false,
       CheckIt:true,
+      height:1000
     };
   }
 
@@ -130,13 +131,13 @@ import {withGetScreen} from 'react-getscreen'
         </Navbar>
 
         <Form className="mt-5">
-        <Collapse collapsed={this.state.man}>
+        <Collapse collapsed={this.state.man} height={this.state.height}>
           <Gender sex="men"/>
         </Collapse>
-        <Collapse collapsed={this.state.woman}>
+        <Collapse collapsed={this.state.woman} height={this.state.height}>
           <Gender sex="women"/>
         </Collapse>
-        <Collapse collapsed={this.state.children}>
+        <Collapse collapsed={this.state.children} height={this.state.height}>
           <Gender sex="children"/>
         </Collapse>
          

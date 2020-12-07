@@ -10,7 +10,6 @@ class Gender extends React.Component {
   render(){
 
     if(this.props.sex == "women"){
-      console.log(this.props.sex)
       var text={
           textAlign:"right"
       }
@@ -25,7 +24,7 @@ class Gender extends React.Component {
     speed: 550,
     slidesToShow: 5,
     swipeToSlide: true,
-
+    rows: 2,
   };
 
   if (this.props.isMobile()) var settings = {

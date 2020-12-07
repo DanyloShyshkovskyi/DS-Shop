@@ -1,42 +1,25 @@
-import React, { Component } from "react";
+import React, { useState, useContext } from "react";
 import "./style.css"; 
+import {connect} from 'react-redux';
+import{addBasket} from '../../../actions/addAction';
+ 
 
-export default class Cards2 extends Component {
 
 
-  constructor (props) {
-    super(props);
-    this.state = {
-       name:null,
-       brand:"",
-       img:"",
-       prise:''
-    };
-    
-  }
-  
+function Cards2(props){
 
-  toggle = () => {
-    this.setState({
-      name:"huj",
-      brand:this.props.brand,
-      img:this.props.img,
-      prise:this.props.price
-    });
-    console.log(this.state.name)
-  }
-  render() {
+
     return (
         <div className="container page-wrapper">
         <div className="page-inner">
           <div className="row">
             <div className="el-wrapper">
               <div className="box-up">
-                <img className="img" src={this.props.img} alt="" />
+                <img className="img" src={props.img} alt="" />
                 <div className="img-info">
                   <div className="info-inner">
-                    <span className="p-name">{this.props.name}</span>
-                    <span className="p-company">{this.props.brand}</span>
+                    <span className="p-name">{props.name}</span>
+                    <span className="p-company">{props.brand}</span>
                   </div>
                   <div className="a-size">
                     Available sizes :
@@ -48,8 +31,8 @@ export default class Cards2 extends Component {
                 <div className="h-bg">
                   <div className="h-bg-inner" />
                 </div>
-                <a onClick={this.toggle} className="cart" href="#">
-                  <span className="price">{this.props.price}$</span>
+                <a onClick={() => props.addBasket(props)} className="cart">
+                  <span className="price">{props.price}$</span>
                   <span  className="add-to-cart">
                     <span  className="txt">Add in cart</span>
                   </span>
@@ -61,4 +44,6 @@ export default class Cards2 extends Component {
       </div>
     );
   }
-}
+
+
+  export default connect(null, {addBasket}) (Cards2);

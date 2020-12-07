@@ -1,4 +1,5 @@
 
+
 .intro{
     padding: 0;
     margin: 0;
@@ -16,7 +17,14 @@ header{
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
+    overflow: hidden;
 }
+
+
+.heading{
+  margin:5% 5% 0 5%;
+}
+
 
 .dolzno{
   display: flex;
@@ -25,6 +33,9 @@ header{
   text-align: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
+  background: rgba(0,0,0,.5);
+  width: 100vw;
 }
 
 .intro-text{
@@ -66,8 +77,10 @@ header{
 }
 
 .caart{
+    position: fixed;
+    z-index: 6;
     margin-top: 4vh;
-    margin-left: 100%;
+    margin-left: 90%;
     display: block;
      align-items: flex-start;
      border: none;
@@ -78,7 +91,7 @@ header{
 
 @media screen and (max-width:500px) {
   .caart{
-    margin-left: 85%;
+    margin-right: 5%;
   }
 }
 
@@ -106,10 +119,11 @@ header{
 
 
   .modalWindow{
-    margin-top: 20%;
-    margin-left: 40%;
-    height: 20%;
-    width: 20%;
+    overflow:scroll;
+    margin: auto;
+    margin-top: 10%;
+    height: 99%;
+    width: 99%;
     background: white;
     display: flex;
     -webkit-box-pack: center;
@@ -128,7 +142,6 @@ header{
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.5;
   }
 
 
@@ -139,17 +152,21 @@ header{
 
 
   @media screen and (min-width:300px) and (max-width:500px) {
+    .heading{
+      margin:0;
+    }
+    
     .caart{
       margin-left: 80%;
     }
 
     .intro-text{
       position: relative;
-      margin-top: 22vh;
+      margin-top: 28vh;
       font-family: 'Anton', sans-serif;
       text-transform: uppercase;
       font-size: 9.5vh;
-      width: 100%;
+      width: 98%;
       text-align: center;
       letter-spacing: 0.05vh;
   }
@@ -179,11 +196,5 @@ header{
       letter-spacing: 0.05vh;
   }
 
-  .dolzno{
-    width: 200vh;
-    max-width:850px;
-    min-width:500px;
-    background: rgba(0,0,0,.5);
-  }
 
   }
