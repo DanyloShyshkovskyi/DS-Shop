@@ -44,6 +44,27 @@ const Collapse = ({ collapsed, children, ...props }) => {
     duration: 500
   };
 }
+
+if (props.isTablet()){ baseStyles = {
+  overflow: "hidden",
+  height: 0,
+  opacity: 0
+};
+ openStyles = {
+    
+  height:500,
+  opacity: 1
+};
+ collapsedStyles = {
+  height: 0,
+  opacity: 0
+};
+ animationConfig = {
+  duration: 500
+};
+}
+
+
   return (
     <Transition
       items={collapsed}

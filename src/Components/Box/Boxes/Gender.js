@@ -38,6 +38,17 @@ class Gender extends React.Component {
 
   };
 
+  if (this.props.isTablet()) var settings = {
+    autoplaySpeed: 2000,
+    autoplay: true,
+    infinite: true,
+    arrows: true,
+    speed: 550,
+    slidesToShow: 2,
+    swipeToSlide: true,
+
+  };
+
   return (
     <div >
       <p to='/' style={text} className="title"> {this.props.sex} </p>   
