@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/DS-Shop/static/css/main.370e16d5.chunk.css",
-    "main.js": "/DS-Shop/static/js/main.77894068.chunk.js",
-    "main.js.map": "/DS-Shop/static/js/main.77894068.chunk.js.map",
+    "main.css": "/DS-Shop/static/css/main.0233c1b9.chunk.css",
+    "main.js": "/DS-Shop/static/js/main.cf439d71.chunk.js",
+    "main.js.map": "/DS-Shop/static/js/main.cf439d71.chunk.js.map",
     "runtime-main.js": "/DS-Shop/static/js/runtime-main.9966955e.js",
     "runtime-main.js.map": "/DS-Shop/static/js/runtime-main.9966955e.js.map",
     "static/css/2.7251c27e.chunk.css": "/DS-Shop/static/css/2.7251c27e.chunk.css",
-    "static/js/2.6af82432.chunk.js": "/DS-Shop/static/js/2.6af82432.chunk.js",
-    "static/js/2.6af82432.chunk.js.map": "/DS-Shop/static/js/2.6af82432.chunk.js.map",
+    "static/js/2.17b8aefc.chunk.js": "/DS-Shop/static/js/2.17b8aefc.chunk.js",
+    "static/js/2.17b8aefc.chunk.js.map": "/DS-Shop/static/js/2.17b8aefc.chunk.js.map",
     "index.html": "/DS-Shop/index.html",
-    "precache-manifest.73de0a60a4a0665faa95f2a017260c0d.js": "/DS-Shop/precache-manifest.73de0a60a4a0665faa95f2a017260c0d.js",
+    "precache-manifest.c2b703f17a14552703ba670e3ec0c973.js": "/DS-Shop/precache-manifest.c2b703f17a14552703ba670e3ec0c973.js",
     "service-worker.js": "/DS-Shop/service-worker.js",
     "static/css/2.7251c27e.chunk.css.map": "/DS-Shop/static/css/2.7251c27e.chunk.css.map",
-    "static/css/main.370e16d5.chunk.css.map": "/DS-Shop/static/css/main.370e16d5.chunk.css.map",
-    "static/js/2.6af82432.chunk.js.LICENSE.txt": "/DS-Shop/static/js/2.6af82432.chunk.js.LICENSE.txt",
+    "static/css/main.0233c1b9.chunk.css.map": "/DS-Shop/static/css/main.0233c1b9.chunk.css.map",
+    "static/js/2.17b8aefc.chunk.js.LICENSE.txt": "/DS-Shop/static/js/2.17b8aefc.chunk.js.LICENSE.txt",
     "static/media/style.css": "/DS-Shop/static/media/pic.edf57a20.jpg",
     "static/media/backpack.png": "/DS-Shop/static/media/backpack.a77cf0c3.png",
     "static/media/head.png": "/DS-Shop/static/media/head.0abd5404.png",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.9966955e.js",
     "static/css/2.7251c27e.chunk.css",
-    "static/js/2.6af82432.chunk.js",
-    "static/css/main.370e16d5.chunk.css",
-    "static/js/main.77894068.chunk.js"
+    "static/js/2.17b8aefc.chunk.js",
+    "static/css/main.0233c1b9.chunk.css",
+    "static/js/main.cf439d71.chunk.js"
   ]
 }
