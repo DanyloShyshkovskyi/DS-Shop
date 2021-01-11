@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cfdc0985afab97d12a436536222ef784",
+    "revision": "31048645c794d209009c51ba5b1a19f8",
     "url": "/DS-Shop/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DS-Shop/static/css/2.7251c27e.chunk.css"
   },
   {
-    "revision": "b3401d74053323dd3633",
+    "revision": "475c3106e150a0b4f270",
     "url": "/DS-Shop/static/css/main.370e16d5.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DS-Shop/static/js/2.6af82432.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b3401d74053323dd3633",
-    "url": "/DS-Shop/static/js/main.70ce3991.chunk.js"
+    "revision": "475c3106e150a0b4f270",
+    "url": "/DS-Shop/static/js/main.77894068.chunk.js"
   },
   {
     "revision": "3c02e5189cfaf8e62f18",
