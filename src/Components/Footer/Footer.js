@@ -33,7 +33,7 @@ class Footer extends Component {
   return (
     <div className="footer-distributed">
           <div  className="footer-left">
-            <h3>Andrii<span>Batuiev</span></h3>
+            <h3>Danylo<span>Shyshkovskyi</span></h3>
             <p className="footer-links">
               <a href="#">Home</a>
               ·
@@ -53,7 +53,7 @@ class Footer extends Component {
           {CheckIt && <div className="footer-center">
             <div>
             <RoomIcon style={{ fontSize: 30 , color:"white" , marginRight:10}}/>
-              <p>Ukraine,Chernivtsi</p>
+              <p>Wroclaw,Poland</p>
             </div>
             <div>
             <PhoneIcon style={{ fontSize: 30 , color:"white", marginRight:10}}/>
@@ -61,7 +61,7 @@ class Footer extends Component {
             </div>
             <div>
             <EmailIcon style={{ fontSize: 30 , color:"white", marginRight:10}}/>
-              <p><a href="mailto:support@company.com">batuiev.andriy@chnu.edu.ua</a></p>
+              <p><a href="mailto:support@company.com">danik808@gmail.com</a></p>
             </div>
           </div>}
           <div className="footer-right">
