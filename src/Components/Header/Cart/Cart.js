@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import Item from "./Item";
 import Collapse from "./Collapse";
 
+
 function Cart({ basketProps }, props) {
   console.log(props);
 
@@ -13,6 +14,18 @@ function Cart({ basketProps }, props) {
       productsInCart.push(basketProps.products[item]);
     }
   });
+
+  let button;
+
+  if (basketProps.basketNumbers!=0) {
+    button =  <button  className="continueBlack">
+    Checkout
+  </button>;
+  } else {
+    button =  <button disabled  className="continueGrey">
+    Checkout
+  </button>;
+  }
 
   productsInCart = productsInCart.map((products, index) => {
     return (
@@ -43,9 +56,7 @@ function Cart({ basketProps }, props) {
               <p className="value">$ {basketProps.total.toFixed(2)}</p>
             </div>
             <a className="totalRow">
-              <a href="#" className="btn continue">
-                Checkout
-              </a>
+              {button}
             </a>
           </div>
         </div>

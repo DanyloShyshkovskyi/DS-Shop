@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { withGetScreen } from "react-getscreen";
 import "./style.css";
-import "../catto.css";
-import "../catto.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 

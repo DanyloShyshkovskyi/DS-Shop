@@ -10,8 +10,8 @@ import './style.css'
 
 
 export default class Header extends Component {
-  render() {
 
+  render() {
     
     return (
         <header>
@@ -20,7 +20,7 @@ export default class Header extends Component {
           <div className="dolzno">
           <Menu/>
         <p className="intro-text">Welcome to DS Shop</p>
-        <p className="intro-podtext">Your Favorite Create Agency Template</p>
+        <p className="intro-podtext">FOR EVERY MOVE YOU MAKE</p>
         <Link 
         activeClass="active"
         to="main"

@@ -7,7 +7,9 @@ const initialState = {
     products:[
         {name: "huj", brand: "jopa", img:"",inCart:false,  price:"100",count:"0"}
     ],
-    total:0
+    total:0,
+    animation:true,
+    hide:false,
 }
 
 
@@ -20,7 +22,8 @@ export default (state = initialState,action) => {
     
     switch(action.type){
         case ADD_PRODUCT_BASKET:
-            console.log("total",state.total)
+            console.log(state.hide)
+            console.log(state.basketNumbers)
             if (item){
                 newItem ={...item,inCart:true,totalPrice:item.totalPrice+action.price,count:item.count+1};
             }
@@ -28,19 +31,25 @@ export default (state = initialState,action) => {
                 newItem ={name:action.name,brand:action.brand, img:action.img, inCart:true, price:action.price, totalPrice:action.price, count:1};
 
             }
+        
             if (itemIndex<0){
                 return{
                 products:[...state.products,newItem],
                 basketNumbers:state.basketNumbers + 1,
-                total:state.total+action.price
+                total:state.total+action.price,
+                animation:!state.animation,
                 
             }
             }
-            else{return{
+            if(itemIndex>=0)
+                {return{
                 products:[...state.products.slice(0,itemIndex),newItem,...state.products.slice(itemIndex+1)],
                 basketNumbers:state.basketNumbers + 1,
-                total:state.total+action.price
+                total:state.total+action.price,
+                animation:!state.animation
             }}
+
+           
             
         case GET_NUMBERS_BASKET:
             return{
@@ -48,33 +57,33 @@ export default (state = initialState,action) => {
             }
             
         case DELL_NUMBERS_BASKET:
-            console.log("Minus to Basket");
                 newItem ={...item,totalPrice:item.totalPrice-action.price,count:item.count-1};
 
             if (newItem.count==0){
                 newItem ={...item,inCart:false};
-                console.log(newItem.inCart)
-                console.log("blat 0")
                 return{
                 products:[...state.products.slice(0,itemIndex),newItem,...state.products.slice(itemIndex+1)],
-                total:state.total-action.price
+                total:state.total-action.price,
+                basketNumbers:state.basketNumbers - 1,
+                animation:!state.animation
 
             }
             }    
             else{ console.log(newItem.count);return{
                 products:[...state.products.slice(0,itemIndex),newItem,...state.products.slice(itemIndex+1)],
                 basketNumbers:state.basketNumbers - 1,
-                total:state.total-action.price
+                total:state.total-action.price,
+                animation:!state.animation
             }}
            
 
             case DELLALL_NUMBERS_BASKET:
-            console.log("Minus to Basket");
                 newItem ={...item,inCart:false,totalPrice:item.totalPrice-item.totalPrice,count:item.count-item.count};
                 return{
                 products:[...state.products.slice(0,itemIndex),newItem,...state.products.slice(itemIndex+1)],
-                total:state.total-item.totalPrice
-
+                total:state.total-item.totalPrice,
+                basketNumbers:state.basketNumbers - item.count,
+                animation:!state.animation,
             }  
         default:
             return state;

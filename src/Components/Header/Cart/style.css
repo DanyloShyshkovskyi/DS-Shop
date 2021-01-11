@@ -6,8 +6,104 @@
 	 cursor: default;
 	 color: #333;
 	 -webkit-font-smoothing: antialiased;
-	 font-family: 'Droid Serif', serif;
 }
+button.continueGrey{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.015em;
+    font-size: 1em;
+    padding: 1em 3em;
+	color: grey;
+	border-color: grey;
+    font-weight: bold;
+    border-radius: 50px;
+    float: right;
+    text-align: right;
+    transition: all 0.25s linear;
+}
+button.continueGrey::after{
+	content: "\276f";
+    padding: 0.5em;
+    position: relative;
+    right: 0;
+    transition: all 0.15s linear;
+}
+
+button.continueBlack{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.015em;
+    font-size: 1em;
+    padding: 1em 3em;
+	color: black;
+	background-color: white!important;
+    font-weight: bold;
+    border-radius: 50px;
+    float: right;
+    text-align: right;
+    transition: all 0.25s linear;
+}
+button.continueBlack::after{
+	content: "\276f";
+    padding: 0.5em;
+    position: relative;
+    right: 0;
+    transition: all 0.15s linear;
+}
+
+button.continueBlack:hover{
+	background: black!important;
+	color:white;
+}
+
+button.continueBlack:active{
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
+-webkit-transform: scale(0.78);
+transform: scale(0.85);
+}
+button.continueBlack:focus {
+    outline: none;
+}
+
+
+a.continueShopping{
+	cursor: pointer;
+	border-color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.015em;
+	font-size: 0.8em!important;
+	padding: 1em;
+	color: black;
+	background-color:transparent!important;
+    font-weight: bold;
+    border-radius: 50px;
+    float: right;
+    text-align: right;
+    transition: all 0.25s linear;
+}
+a.continueShopping::after{
+	content: "\276f";
+    padding: 0.5em;
+    position: relative;
+    right: 0;
+    transition: all 0.15s linear;
+}
+
+a.continueShopping:hover{
+	font-size: 0.81em!important;
+}
+
+a.continueShopping:active{
+-webkit-transform: scale(0.78);
+transform: scale(0.85);
+}
+a.continueShopping:focus {
+    outline: none;
+}
+
+
+
 
  .cf:before, .cf:after {
 	 content: " ";
@@ -50,7 +146,14 @@
 	 font-family: 'Droid Serif', serif;
 	 font-size: 2em;
 	 float: left;
+	 
 }
+
+button.continue{
+	background: transparent!important;
+	color: black!important;
+}
+
  .heading a.continue:link, .heading a.continue:visited  {
 	 text-decoration: none;
 	 font-family: 'Montserrat', sans-serif;
@@ -68,6 +171,10 @@
 	 -ms-transition: all 0.25s linear;
 	 -o-transition: all 0.25s linear;
 	 transition: all 0.25s linear;
+}
+button.continue:hover{
+	background-color: black!important;
+	color:white!important;
 }
 
 .cartSection a.count-text{
@@ -112,8 +219,7 @@
 }
 
 
-  .cartSection .myfkbuttons.minus:active, .cartSection .myfkbuttons.plus:active,.btn:active, .heading a.continue:active {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
+  .cartSection .myfkbuttons.minus:active, .cartSection .myfkbuttons.plus:active,.btn:active, .heading button.continue:active {
     -webkit-transform: scale(0.78);
     transform: scale(0.85);
   }
@@ -122,7 +228,7 @@
 
 
 
- .heading a.continue:after {
+ .heading button.continue:after {
 	 content: "\276f";
 	 padding: 0.5em;
 	 position: relative;
@@ -133,9 +239,7 @@
 	 -o-transition: all 0.15s linear;
 	 transition: all 0.15s linear;
 }
- .heading a.continue:hover, .heading a.continue:focus, .heading a.continue:active {
-	 background: #8c8c8c;
-}
+
  .heading a.continue:hover:after, .heading a.continue:focus:after, .heading a.continue:active:after {
 	 right: -10px;
 }
@@ -305,12 +409,8 @@ ul.cartWrap{
 	 padding: 0.75em 0;
 	 border-radius: 0 1em 1em 0;
 	 text-align: center;
-	 border: 1px solid black;
 }
- .promoCode a.btn:hover {
-	 border: 1px solid #8c8c8c;
-	 background: #8c8c8c;
-}
+
  .btn:link, .btn:visited {
 	 text-decoration: none;
 	 font-family: 'Montserrat', sans-serif;
@@ -339,9 +439,6 @@ ul.cartWrap{
 	 -ms-transition: all 0.15s linear;
 	 -o-transition: all 0.15s linear;
 	 transition: all 0.15s linear;
-}
- .btn:hover, .btn:focus, .btn:active {
-	 background: #8c8c8c;
 }
 
  .btn:hover:after, .btn:focus:after, .btn:active:after {
