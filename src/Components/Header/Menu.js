@@ -9,7 +9,6 @@ import { useSpring, animated } from 'react-spring'
 
 function Menu(props){
 
-  const [count, setCount] = React.useState();
   const [modalShow, setModalShow] = React.useState(false);
 
 

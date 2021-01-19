@@ -2,12 +2,15 @@ import React from "react";
 import { connect } from "react-redux";
 import Item from "./Item";
 import Collapse from "./Collapse";
+import MyVerticallyCenteredModal from "./Modal"
 
 
 function Cart({ basketProps }, props) {
   console.log(props);
 
   let productsInCart = [];
+
+  const [modalShow, setModalShow] = React.useState(false);
 
   Object.keys(basketProps.products).forEach(function (item) {
     if (basketProps.products[item].count >= 0) {
@@ -18,7 +21,7 @@ function Cart({ basketProps }, props) {
   let button;
 
   if (basketProps.basketNumbers!=0) {
-    button =  <button  className="continueBlack">
+    button =  <button  onClick={() => setModalShow(true)}  className="continueBlack">
     Checkout
   </button>;
   } else {
@@ -57,6 +60,10 @@ function Cart({ basketProps }, props) {
             </div>
             <a className="totalRow">
               {button}
+             {/* <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+             />*/}
             </a>
           </div>
         </div>

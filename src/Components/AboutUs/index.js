@@ -49,9 +49,9 @@ class Index extends Component {
                 error eos totam nisi neque.
               </p>
               <div className="skills">
-                <span>Web Design</span>
-                <span>Photoshop Illustrator</span>
-                <span>Coding</span>
+                <span>lorem</span>
+                <span>Ipsum</span>
+                <span>Dolor</span>
               </div>
             </div>
           </div>
