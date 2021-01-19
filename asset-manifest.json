@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/DS-Shop/static/css/main.615c3735.chunk.css",
-    "main.js": "/DS-Shop/static/js/main.ea7bebf0.chunk.js",
-    "main.js.map": "/DS-Shop/static/js/main.ea7bebf0.chunk.js.map",
+    "main.js": "/DS-Shop/static/js/main.4e9a2944.chunk.js",
+    "main.js.map": "/DS-Shop/static/js/main.4e9a2944.chunk.js.map",
     "runtime-main.js": "/DS-Shop/static/js/runtime-main.9966955e.js",
     "runtime-main.js.map": "/DS-Shop/static/js/runtime-main.9966955e.js.map",
     "static/css/2.7251c27e.chunk.css": "/DS-Shop/static/css/2.7251c27e.chunk.css",
     "static/js/2.8a505b52.chunk.js": "/DS-Shop/static/js/2.8a505b52.chunk.js",
     "static/js/2.8a505b52.chunk.js.map": "/DS-Shop/static/js/2.8a505b52.chunk.js.map",
     "index.html": "/DS-Shop/index.html",
-    "precache-manifest.5123bd6e53d79b71e80e12f7cc90fc33.js": "/DS-Shop/precache-manifest.5123bd6e53d79b71e80e12f7cc90fc33.js",
+    "precache-manifest.a1e40795b0e47b1d1ba6fb20653a01ba.js": "/DS-Shop/precache-manifest.a1e40795b0e47b1d1ba6fb20653a01ba.js",
     "service-worker.js": "/DS-Shop/service-worker.js",
     "static/css/2.7251c27e.chunk.css.map": "/DS-Shop/static/css/2.7251c27e.chunk.css.map",
     "static/css/main.615c3735.chunk.css.map": "/DS-Shop/static/css/main.615c3735.chunk.css.map",
@@ -27,6 +27,6 @@
     "static/css/2.7251c27e.chunk.css",
     "static/js/2.8a505b52.chunk.js",
     "static/css/main.615c3735.chunk.css",
-    "static/js/main.ea7bebf0.chunk.js"
+    "static/js/main.4e9a2944.chunk.js"
   ]
 }
