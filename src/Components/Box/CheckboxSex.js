@@ -113,7 +113,7 @@ import {withGetScreen} from 'react-getscreen'
           </Form>
           {CheckIt && <Form inline>
               <Button
-              className="mr-5"
+              className="mr-1"
               onClick={this.checkItAll}
               variant="light"
               style={{

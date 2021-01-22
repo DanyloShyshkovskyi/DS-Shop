@@ -2,11 +2,7 @@
  @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:400,700);
 
 
- body {
-	 cursor: default;
-	 color: #333;
-	 -webkit-font-smoothing: antialiased;
-}
+
 button.continueGrey{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
@@ -17,8 +13,8 @@ button.continueGrey{
 	border-color: grey;
     font-weight: bold;
     border-radius: 50px;
-    float: right;
-    text-align: right;
+	text-align: right;
+	float: right;
     transition: all 0.25s linear;
 }
 button.continueGrey::after{
@@ -29,6 +25,32 @@ button.continueGrey::after{
     transition: all 0.15s linear;
 }
 
+
+button.continueBack{
+	outline: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.015em;
+	font-size: 1em;
+	padding: 1em;
+	color: black;
+	background-color: white!important;
+    font-weight: bold;
+	border-radius: 50px;
+	float: right;
+	text-align: right;
+	border: none;
+    transition: all 0.25s linear;
+}
+button.continueBack::before{
+	content: "\276e";
+    padding: 0.5em;
+    position: relative;
+    right: 0;
+    transition: all 0.15s linear;
+}
+
+
 button.continueBlack{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
@@ -38,8 +60,8 @@ button.continueBlack{
 	color: black;
 	background-color: white!important;
     font-weight: bold;
-    border-radius: 50px;
-    float: right;
+	border-radius: 50px;
+	float: right;
     text-align: right;
     transition: all 0.25s linear;
 }
@@ -185,16 +207,17 @@ button.continue:hover{
 }
 
 .cartSection .myfkbuttons.minus {
+	height: 25px;
+	width: 25px;
 	cursor: pointer;
 	border-style: none;
 	text-decoration: none;
 	 font-family: 'Montserrat', sans-serif;
 	 text-align: center;
 	position: relative;
-	padding: 0  .5em 0 .5em;
 	margin: auto;
 	 color: #fff;
-	 background: #8c8c8c;
+	 background: rgb(161, 0, 0);
 	 font-weight: bold;
 	 border-radius: 50%;
 	 transition: all 0.25s linear;
@@ -204,15 +227,16 @@ button.continue:hover{
 	outline: none;
 }
 .cartSection .myfkbuttons.plus {
+	height: 25px;
+	width: 25px;
 	cursor: pointer;
 	border-style: none;
 	text-decoration: none;
 	 font-family: 'Montserrat', sans-serif;
 	 text-align: center;
 	position: relative;
-	padding: 0  .5em 0 .5em;;
 	 color: #fff;
-	 background: black;
+	 background: rgb(0, 90, 0);
 	 font-weight: bold;
 	 border-radius: 50%;
 	 transition: all 0.25s linear;
@@ -358,26 +382,32 @@ ul.cartWrap{
 	 color: #6f6f6f;
 	 font-family: helvetica, arial, sans-serif;
 }
- a.remove {
+ button.remove {
+	outline: none;
+	border-style: none;
+	border-width: 0;
 	 text-decoration: none;
 	 font-family: 'Montserrat', sans-serif;
 	 color: #fff;
 	 font-weight: bold;
-	 background: #e0e0e0;
-	 padding: 0.5em;
-	 font-size: 0.75em;
-	 display: inline-block;
-	 border-radius: 100%;
-	 line-height: 0.85;
+	 background: #969696;
+	 border-radius: 50%;
+	 line-height: 16px;
+	 width: 18px;
+	 height: 18px;
+	 font-size: 12px;
+	 position: relative;
+	 text-align: center;
+	 
 	 -webkit-transition: all 0.25s linear;
 	 -moz-transition: all 0.25s linear;
 	 -ms-transition: all 0.25s linear;
 	 -o-transition: all 0.25s linear;
 	 transition: all 0.25s linear;
 }
- a.remove:hover {
+ button.remove:hover {
 	 cursor: pointer;
-	 background: #f30;
+	 background: rgb(82, 17, 0);
 }
  .promoCode {
 	 border: 2px solid #efefef;
@@ -465,37 +495,65 @@ ul.subtotal {
 	 text-align: center;
 }
 
-.Final{
+.Finlal{
 	display: flex;
-	flex-direction: row;
-	margin-bottom:1rem ;
-	margin-top:1rem ;
-	padding: 0;
-	text-align: center;
-	align-items: center;
-	font-size: 1.25em;
-	font-weight: bold;
+	flex-direction: column;
+	margin-bottom: 2rem!important;
 }
 
  .final {
-	 display: flex;
+	 width: 100%;
+	 position: relative;
+	float: right;
 	 flex-direction: row;
-	 margin-bottom:1rem ;
-	 margin-top:1rem ;
-	 margin-left: 1rem;
-	 text-align: center;
-	 align-items: center;
+	 margin-bottom:0.5rem ;
+	 margin-right: 2rem;
+	 text-align: right;
+	 align-items: right;
 	 font-size: 1.25em;
 	 font-weight: bold;
+	 
 }
+
+.modal-footer {
+	margin: auto;
+	justify-content: center;
+	width: 90%;
+	border-top:1px solid #d0d0d0;
+    display: flex;
+    align-items: center;
+	padding: 0;
+}
+
+.wrap {
+    width: 90%;
+    max-width: 960px;
+    margin: auto;
+    padding:0;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0.5rem;
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 0;
+}
+
+
  .subtotal .totalRow span {
 	 display: inline-block;
 	 text-align: center;
 }
 
 .label {
+	position: relative;
 	text-transform: uppercase;
-	margin-right: 0.5em;
+	margin-right: 1.5em;
 	padding: 0;
 }
 .value{

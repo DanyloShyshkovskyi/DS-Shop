@@ -43,9 +43,9 @@ function Item(props) {
               <p>${props.totalPrice.toFixed(2)}</p>
             </div>
             <div className="cartSection removeWrap">
-              <a onClick={() => props.dellAllBasket(props)} className="remove">
+              <button onClick={() => props.dellAllBasket(props)} className="remove">
                 x
-              </a>
+              </button>
             </div>
           </div>
         </li>

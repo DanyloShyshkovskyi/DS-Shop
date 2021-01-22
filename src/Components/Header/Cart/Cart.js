@@ -2,7 +2,6 @@ import React from "react";
 import { connect } from "react-redux";
 import Item from "./Item";
 import Collapse from "./Collapse";
-import MyVerticallyCenteredModal from "./Modal"
 
 
 function Cart({ basketProps }, props) {
@@ -51,22 +50,6 @@ function Cart({ basketProps }, props) {
     <div>
       <div className="wrap cf">
         {productsInCart}
-
-        <div className="subtotal cf">
-          <div className="Finlal">
-            <div className=" final">
-              <p className="label">Total:</p>
-              <p className="value">$ {basketProps.total.toFixed(2)}</p>
-            </div>
-            <a className="totalRow">
-              {button}
-             {/* <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-             />*/}
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   );
