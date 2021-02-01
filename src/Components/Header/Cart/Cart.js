@@ -17,18 +17,6 @@ function Cart({ basketProps }, props) {
     }
   });
 
-  let button;
-
-  if (basketProps.basketNumbers!=0) {
-    button =  <button  onClick={() => setModalShow(true)}  className="continueBlack">
-    Checkout
-  </button>;
-  } else {
-    button =  <button disabled  className="continueGrey">
-    Checkout
-  </button>;
-  }
-
   productsInCart = productsInCart.map((products, index) => {
     return (
       <Collapse collapsed={products.inCart} height={220}>

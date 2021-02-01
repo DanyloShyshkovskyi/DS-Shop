@@ -4,6 +4,8 @@
 
 
 button.continueGrey{
+	border-style: solid;
+	outline: none;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: -0.015em;
@@ -52,6 +54,8 @@ button.continueBack::before{
 
 
 button.continueBlack{
+	border-style: solid;
+	outline: none;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: -0.015em;

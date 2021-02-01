@@ -39,9 +39,6 @@ function Cards2(props) {
                 }}
                 className="cart"
               >
-                {/*<div className="a-bg">
-                  <div className="a-bg-inner" />
-                </div>*/}
                 <div class={cart}>
                 <span className="price">{props.price}$</span>
                 <span className="add-to-cart">

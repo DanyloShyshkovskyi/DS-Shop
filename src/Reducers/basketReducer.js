@@ -1,11 +1,10 @@
 import { FormatListNumberedRtl } from "@material-ui/icons";
-import { ADD_PRODUCT_BASKET, GET_NUMBERS_BASKET,DELL_NUMBERS_BASKET,DELLALL_NUMBERS_BASKET } from "../actions/types";
+import { ADD_PRODUCT_BASKET, GET_NUMBERS_BASKET,DELL_NUMBERS_BASKET,DELLALL_NUMBERS_BASKET,DELLALL } from "../actions/types";
 
 
 const initialState = {
     basketNumbers: 0,
     products:[
-        {name: "huj", brand: "jopa", img:"",inCart:false,  price:"100",count:"0"}
     ],
     total:0,
     animation:true,
@@ -85,7 +84,17 @@ export default (state = initialState,action) => {
                 basketNumbers:state.basketNumbers - item.count,
                 animation:!state.animation,
             }  
-        default:
-            return state;
+
+            case DELLALL:
+                return{
+                products:[],
+                total:0,
+                basketNumbers:0,
+                animation:!state.animation,
+                }
+
+                default:
+                    return state;
+
     }
 }
